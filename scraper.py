@@ -58,7 +58,7 @@ def add_event(calendar, topic, date, role):
 
 
 calendar = Calendar()
-name = args.name
+name = args.name.lower().capitalize()
 table_list = pd.read_html(get_content())
 for i in range(5, len(table_list)):
     table = table_list[i]
