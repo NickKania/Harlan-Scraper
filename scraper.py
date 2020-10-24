@@ -11,6 +11,7 @@ parser.add_argument('name', help='Last name of student')
 parser.set_defaults(create_cal=False)
 args = parser.parse_args()
 
+
 def get_content():
     try:
         response = requests.post(
